@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Catumblr</title>
+
+</head>
+<body>
+<h1>Catumblr</h1>
+
+<p>Catumblr is a small but simple iOS application built for those looking to learn by example. The application is a single endless scrolling collection view of cat photos from Tumblr’s public API.</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>100% natively coded in Swift</li>
+<li>Cocoa Auto Layout</li>
+<li>Code based views</li>
+<li>JSON REST API fetching, and deserializing</li>
+<li>Image loading &amp; caching</li>
+<li>Endless scrolling</li>
+<li>Animated GIF loading and playback</li>
+</ul>
+
+
+<h2>Files</h2>
+
+<ul>
+<li><strong>assets</strong> - contains the editable .psd files used to generate the icon and default screens</li>
+<li><strong>docs</strong> - contains .md and .pdf formatted documentation</li>
+<li><strong>catumblr-ios</strong> - contains the Xcode project and source files</li>
+</ul>
+
+
+<h2>Requirements</h2>
+
+<ul>
+<li>iOS 7.0/8.0 deployment</li>
+<li>Xcode 6</li>
+<li>Your own Tumblr API key.</li>
+</ul>
+
+
+<h2>Setup</h2>
+
+<h3>Getting a Tumblr API Key</h3>
+
+<ol>
+<li>Visit <a href="https://www.tumblr.com/oauth/apps">Tumblr</a> to obtain an OAuth API key.</li>
+<li>Open Configuration.swift and edit the OAuth API key.</li>
+</ol>
+
+
+<h2>Xcode / Project Source Files</h2>
+
+<h6>Bridging-Header.h</h6>
+
+<p>Standard swift bridging header to expose Objective-C code to swift. Catumblr does not use any Objective-C code so this file is empty but configured if further modifications require it.</p>
+
+<h6>Configuration.swift</h6>
+
+<p>Contains a few configuration variables used by the application such as the Tumblr API key, the tag used to fetch posts and the title of the view controller.</p>
+
+<h6>AppDelegate.swift</h6>
+
+<p>Standard iOS application delegate with basic setup.</p>
+
+<h6>Models/Post.swift</h6>
+
+<p>Model class for each Tumblr post loaded from Tumblr’s public REST API. The model code also contains the JSON deserialization.</p>
+
+<h6>Models/AnimatedImage.swift</h6>
+
+<p>Model class for each animated gif image.</p>
+
+<h6>Models/AnimatedImageFrame.swift</h6>
+
+<p>Model class for each frame inside an animated gif image.</p>
+
+<h6>Controllers/NavigationController.swift</h6>
+
+<p>A basic NavigationController pre-configured with a black navigation bar, light status bar and custom font.</p>
+
+<h6>Controllers/StreamViewController.swift</h6>
+
+<p>The main view controller that manages fetching data from Tumblr’s API, updating a UICollectionView and endless scroll.</p>
+
+<h6>Views &amp; Cells/PhotoCollectionViewCell.swift</h6>
+
+<p>The UICollectionViewCell subclass used to display the posts</p>
+
+<h6>Operations/PhotoLoadOperation.swift</h6>
+
+<p>A NSOperation subclass that manages loading images from Tumblr. It caches images into the global shared NSURLCache and ensures images are never loaded from the network if they exist in the cache.</p>
+
+<h6>Images.xcassets</h6>
+
+<p>Standard Xcode assets bundle</p>
+
+<h6>Supporting Files/Info.plist</h6>
+
+<p>Standard Xcode application info plist</p>
+
+<h6>Libraries/Snappy.swift</h6>
+
+<p>Auto Layout library to makes auto layout much easier to work with. You can see documentation about snappy <a href="https://github.com/Masonry/Snappy/tree/develop">here</a>.</p>
+
+<h2>Support</h2>
+
+<p>If you need help, or have questions via email please send them to <a href="mailto:support@zwopple.com">support@zwopple.com</a>.</p>
+</body>
+</html>
