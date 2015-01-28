@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Catumblr.xcodeproj">
+      location = "self:Leagumblr.xcodeproj">
    </FileRef>
 </Workspace>

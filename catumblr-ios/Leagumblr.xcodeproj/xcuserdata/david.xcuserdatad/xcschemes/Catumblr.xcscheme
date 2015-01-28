@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EEFE1B1E19A78C690004D581"
-               BuildableName = "Catumblr.app"
-               BlueprintName = "Catumblr"
-               ReferencedContainer = "container:Catumblr.xcodeproj">
+               BuildableName = "Leagumblr.app"
+               BlueprintName = "Leagumblr"
+               ReferencedContainer = "container:Leagumblr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EEFE1B1E19A78C690004D581"
-            BuildableName = "Catumblr.app"
-            BlueprintName = "Catumblr"
-            ReferencedContainer = "container:Catumblr.xcodeproj">
+            BuildableName = "Leagumblr.app"
+            BlueprintName = "Leagumblr"
+            ReferencedContainer = "container:Leagumblr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EEFE1B1E19A78C690004D581"
-            BuildableName = "Catumblr.app"
-            BlueprintName = "Catumblr"
-            ReferencedContainer = "container:Catumblr.xcodeproj">
+            BuildableName = "Leagumblr.app"
+            BlueprintName = "Leagumblr"
+            ReferencedContainer = "container:Leagumblr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EEFE1B1E19A78C690004D581"
-            BuildableName = "Catumblr.app"
-            BlueprintName = "Catumblr"
-            ReferencedContainer = "container:Catumblr.xcodeproj">
+            BuildableName = "Leagumblr.app"
+            BlueprintName = "Leagumblr"
+            ReferencedContainer = "container:Leagumblr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
