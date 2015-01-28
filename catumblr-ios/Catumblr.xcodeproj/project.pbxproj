@@ -27,7 +27,7 @@
 		EE7E48D419A86F80007682F2 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EEFBBFA019BD38A80070AB85 /* AnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImage.swift; sourceTree = "<group>"; };
 		EEFBBFA219BD38B00070AB85 /* AnimatedImageFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageFrame.swift; sourceTree = "<group>"; };
-		EEFE1B1F19A78C690004D581 /* Leagumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leagumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEFE1B1F19A78C690004D581 /* Catumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFE1B2319A78C690004D581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEFE1B2419A78C690004D581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEFE1B2619A78C690004D581 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		EEFE1B2019A78C690004D581 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEFE1B1F19A78C690004D581 /* Leagumblr.app */,
+				EEFE1B1F19A78C690004D581 /* Catumblr.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EEFE1B1E19A78C690004D581 /* Leagumblr */ = {
+		EEFE1B1E19A78C690004D581 /* Catumblr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEFE1B3B19A78C690004D581 /* Build configuration list for PBXNativeTarget "Leagumblr" */;
+			buildConfigurationList = EEFE1B3B19A78C690004D581 /* Build configuration list for PBXNativeTarget "Catumblr" */;
 			buildPhases = (
 				EEFE1B1B19A78C690004D581 /* Sources */,
 				EEFE1B1C19A78C690004D581 /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = Leagumblr;
+			name = Catumblr;
 			productName = Catumblr;
-			productReference = EEFE1B1F19A78C690004D581 /* Leagumblr.app */;
+			productReference = EEFE1B1F19A78C690004D581 /* Catumblr.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EEFE1B1A19A78C690004D581 /* Build configuration list for PBXProject "Leagumblr" */;
+			buildConfigurationList = EEFE1B1A19A78C690004D581 /* Build configuration list for PBXProject "Catumblr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EEFE1B1E19A78C690004D581 /* Leagumblr */,
+				EEFE1B1E19A78C690004D581 /* Catumblr */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 				INFOPLIST_FILE = Catumblr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Leagumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Catumblr/Bridging-Header.h";
 			};
 			name = Debug;
@@ -323,7 +323,7 @@
 				INFOPLIST_FILE = Catumblr/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Leagumblr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Catumblr/Bridging-Header.h";
 			};
 			name = Release;
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EEFE1B1A19A78C690004D581 /* Build configuration list for PBXProject "Leagumblr" */ = {
+		EEFE1B1A19A78C690004D581 /* Build configuration list for PBXProject "Catumblr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEFE1B3919A78C690004D581 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEFE1B3B19A78C690004D581 /* Build configuration list for PBXNativeTarget "Leagumblr" */ = {
+		EEFE1B3B19A78C690004D581 /* Build configuration list for PBXNativeTarget "Catumblr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEFE1B3C19A78C690004D581 /* Debug */,
