@@ -224,12 +224,8 @@ class StreamViewController: UIViewController, UICollectionViewDelegate, UICollec
                 return
             }
             
-            // get url for Tumblr
-            //let url = NSURL(string: "http://api.tumblr.com/v2/tagged?limit=20&before=\(timestamp)&tag=\(TUMBLR_FETCH_TAG)&api_key=\(TUMBLR_API_KEY)")
-            
-            // get url for Lol
-            let url = NSURL(string: "https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion?champData=all&api_key=9f5f9a61-c426-4b8b-9cae-19f1c998af25")
-            
+            // get url
+            let url = NSURL(string: "http://api.tumblr.com/v2/tagged?limit=20&before=\(timestamp)&tag=\(TUMBLR_FETCH_TAG)&api_key=\(TUMBLR_API_KEY)")
             
             // create request
             let req = NSMutableURLRequest(URL: url!)
